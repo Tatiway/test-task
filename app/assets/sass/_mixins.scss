@@ -1,0 +1,27 @@
+@mixin clearfix {
+  &:before {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
+@mixin tablet-v {
+  @media (min-width: #{$tablet-v-width}) {
+    @content;
+  }
+}
+@mixin tablet-h {
+  @media (min-width: #{$tablet-h-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

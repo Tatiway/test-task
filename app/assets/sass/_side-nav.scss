@@ -1,0 +1,46 @@
+.side-nav {
+  display: flex;
+  height: 30px;
+  background-color: $darkGreyColor;
+  padding: 4px 0 4px 14px;
+  @include tablet-h {
+    flex-direction: column;
+    height: auto;
+    padding: 0px;
+  }
+  &__link {
+    font-size: 14px;
+    color: $blueColor;
+    line-height: 1.6;
+    padding: 0 6px;
+    &:hover {
+      background-color: #e9e8e8;
+      color: #6c6c6c;
+      transition: all ease .2s;
+    }
+    @include tablet-v {
+      &:hover {
+        &:after {
+          content: " (current)";
+        }
+      }
+    }
+    @include tablet-h {
+      line-height: 2.2;
+      padding: 0 15px;
+      height: 30px;
+      position: relative;
+      &:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $sideGreyColor;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all ease .2s;
+      }
+    }
+  }
+
+}

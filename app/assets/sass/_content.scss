@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @include tablet-h {
+    flex-direction: row;
+  }
+  &__left {
+    @include tablet-h {
+      width: 20%;
+    }
+  }
+  &__right {
+    @include tablet-h {
+      width: 20%;
+    }
+  }
+  &__middle {
+    background-color: $whiteColor;
+    @include tablet-h {
+      width: 60%;
+    }
+  }
+
+}

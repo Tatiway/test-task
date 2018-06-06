@@ -1,0 +1,10 @@
+.header {
+  &__container {
+    background-color: $midGreyColor;
+    position: relative;
+    padding: 12px 20px;
+    @include tablet-h {
+      padding: 26px 34px;
+    }
+  }
+}

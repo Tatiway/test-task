@@ -1,0 +1,10 @@
+.footer {
+  padding: 18px 0 32px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.2;
+  color: $whiteColor;
+  &__link {
+    color: $whiteColor;
+  }
+}

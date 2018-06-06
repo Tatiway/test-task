@@ -1,0 +1,35 @@
+.article {
+  padding: 20px 20px 38px;
+  &__title {
+    font-size: 18px;
+    line-height: 1.2;
+    position: relative;
+    margin: 0 0 20px 0;
+    color:$logoColor;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      background-color: $sideGreyColor;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+    }
+  }
+  &__text p {
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 0 0 18px 0;
+    color:$logoColor;
+  }
+  &__img {
+    width: 228px;
+    height: 262px;
+    margin: 0  18px 18px 0;
+    float: left;
+    @include tablet-v {
+      margin: 0  18px 0 0;
+    }
+
+  }
+}

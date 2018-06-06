@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $sideGreyColor;
+}
+.container:before {
+  content: ' ';
+  display: table;
+}
+.container:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: calc(100% - 30px);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  }
+}
+@media (min-width: 780px) {
+  .container {
+    width: 748px;
+  }
+}
+@media (min-width: 1320px) {
+  .container {
+    width: 1024px;
+  }
+}
